@@ -1,0 +1,14 @@
+{
+  "name": "sitrep-sh",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "bun run --filter sitrep-api dev",
+    "dev:cli": "bun run --filter sitrep-cli dev",
+    "dev:webapp": "bun run --filter sitrep-webapp dev",
+    "build": "bun run --filter '*' build",
+    "test": "bun run --filter '*' test"
+  }
+}
